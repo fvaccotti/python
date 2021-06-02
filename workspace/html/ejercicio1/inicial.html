@@ -1,0 +1,100 @@
+<!doctype html> <!-- para indicar que estamos usando la version HTML5-->
+<html>
+    <head>
+        <title>Mi primera pagina</title>  <!-- titulo de la pestania -->
+    </head>  <!-- no muestra nada en el explorador web. Se usa para dar instrucciones, meter archivos js o css -->
+    <body>
+        <form> <!-- forma de perdile datos al usuario. La etiqueta por si sola no hace nada-->
+            <fieldset>
+                <legend>Datos Personales</legend> <!-- le pone un texto a fieldset-->
+                <label>Edad</label>
+                <input type="number" placeholder="Edad..."/> <!-- por defecto es texto-->
+                <br />
+                <label>Password</label>
+                <input type="password"/>
+                <br />
+                <label>Nombre</label>
+                <input type="text"/>
+                <br />
+                <input type="submit" value="Enviar formulario"/> <!-- boton para enviar el formulario-->
+                <br />
+                <textarea></textarea>
+                <button>Aceptar</button>
+                <select>
+                    <option value="goku">Goku</option>  <!-- el valor seleccionado es Goku pero el enviado al server es el que tiene value-->
+                    <option value="vegeta">Vegeta</option>
+                    <option value="gohan">Gohan</option>
+                </select> <!-- muestra opciones a seleccionar -->
+            </fieldset> <!-- para agrupar campos-->
+        </form>
+        <fieldset>
+            <legend>Imagenes, Links y listas</legend>
+            <img src="http://placekitten.com/100/100"/>
+            <br />
+            <a href="https://www.google.com">Ir a google</a> <!--permite navegar de un sitio a otro-->
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul> <!-- unordered list-->
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol> <!-- ordered list-->
+        </fieldset>
+        <fieldset>
+            <legend>Tabla</legend>
+            <table>
+                <thead> <!-- para indicar el header de la tabla-->
+                    <tr> <!-- fila -->
+                        <th>Mes</th>
+                        <th>Ahorros</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- para mostrar el contenido-->
+                    <tr>
+                        <td>Enero</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Febrero</td>
+                        <td>500</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Suma Total</td>
+                        <td>1500</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Conceptos Basicos</legend>
+            <h1>Titulo 1</h1>
+            <h2>Titulo 2</h2>
+            <h3>Titulo 3</h3>
+            <h4>Titulo 4</h4>
+            <h5>Titulo 5</h5>
+            <h6>Titulo 6</h6>
+            <p>Esto es un parrafo</p>
+            <hr /> <!-- permite agregar una linea de separacion horizontal. Que se cierre asi significa que dentro de ella no tiene contenido /> -->
+            <p>Esto es un parrafo <br /> con salto de linea</p>
+            <p>Este es mi parrafo 3 <b>en bold</b></p>
+            <blockquote>Esta es una cita! Se muestra mas alineado a la derecha</blockquote>
+            <code>Esto es codigo</code> <!-- para agregar codigo mas codigo html o js en otro formato -->
+            <em><br />Es un texto con enfasis!</em>
+            <i><br />Esto es en cursiva!</i>
+            <pre>Preformateado</pre>
+            <s>Preformateado</s>
+            <small>Texto chico</small>
+            <strong>Este es un texto tambien en negrita con strong</strong>
+            <br />
+            <u>Texto subrayado</u>
+            <div>Un div permite indicar una division o seccion</div>
+            <div>Seccion 2</div>
+            <div>Seccion3 </div>    
+        </fieldset>    
+    </body> <!-- para mostrar contenido en la pagina -->
+</html>
