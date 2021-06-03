@@ -1,0 +1,40 @@
+body {
+    background-color: #eeeeee;
+}
+
+/*Para acceder a un id va con #*/
+#parrafo {
+    color: crimson;
+}
+
+/*  Para seleccionar las clases se usa el . 
+    Las clases pueden ser usadas por muchos elementos, a diferencia del id (como es logico) 
+*/
+.etiqueta {
+    color: darkmagenta;
+}
+
+
+/* La propiedad de Margin genera una separacion entre el contenido de nuestra caja (un div) y el body o cualquier otra caja donde este. Si no ponemos
+un fondo de color, el margin no se ve
+En el caso de padding, ensancha el contenido de la caja <div>. Margin bordea por fuera y padding por dentro
+El borde de la caja esta entre medio de padding y margin y es el border-style
+*/
+.caja {
+    margin: 8px;
+    padding: 8px;
+    border-style: solid; /*se puede poner mas de uno*/
+    border-width: 3px;
+    border-color: deeppink;
+    border-left: 6px solid #afa ; /* la asignacion de colores se hace en order. En border-color le dimos color a todo pero en border-left se lo cambiamos
+    asique prevalece esa*/
+  /*border-bottom: ;
+    border-right: ;
+    border-top: ;*/
+    border-radius: 10px; /*redonderar los bordes*/
+    background-color: lemonchiffon;
+    /*Alto y ancho de nuestra caja div*/
+    height: 100px;
+    width: 100px;
+    color: olive;
+}
