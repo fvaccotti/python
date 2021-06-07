@@ -1,0 +1,169 @@
+body {
+    background-color: #eeeeee;
+}
+
+/*Para acceder a un id va con #*/
+#parrafo {
+    color: crimson;
+}
+
+/*  Para seleccionar las clases se usa el . 
+    Las clases pueden ser usadas por muchos elementos, a diferencia del id (como es logico) 
+*/
+.etiqueta {
+    color: darkmagenta;
+}
+
+
+/* La propiedad de Margin genera una separacion entre el contenido de nuestra caja (un div) y el body o cualquier otra caja donde este. Si no ponemos
+un fondo de color, el margin no se ve
+En el caso de padding, ensancha el contenido de la caja <div>. Margin bordea por fuera y padding por dentro
+El borde de la caja esta entre medio de padding y margin y es el border-style
+*/
+.caja {
+    margin: 8px;
+    padding: 8px;
+    border-style: solid; /*se puede poner mas de uno*/
+    border-width: 3px;
+    border-color: deeppink;
+    border-left: 6px solid #afa ; /* la asignacion de colores se hace en order. En border-color le dimos color a todo pero en border-left se lo cambiamos
+    asique prevalece esa*/
+  /*border-bottom: ;
+    border-right: ;
+    border-top: ;*/
+    border-radius: 10px; /*redonderar los bordes*/
+    background-color: lemonchiffon;
+    /*Alto y ancho de nuestra caja div*/
+    height: 100px;
+    width: 100px;
+    color: olive;
+}
+
+/*Propiedades de parrafos*/
+p {
+    color: #222fff; /* pueden ser con palabras o en hexa*/
+    font-family: 'Tahoma';
+    font-style: oblique;
+    font-weight: bold; /*Los weight van de 100 en 100, desde 100 a 900. Se escriben asi*/
+    font-size: 40px;  /*La unidad del navegador es em, se puede poner como 1em, 1.5em etc, en general 1em=16px*/
+    text-align: left;  /* por defecto es left */
+    text-indent: 60px;
+    line-height: 1.9;
+    word-spacing: 3px; /* espacio entre palabras*/
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.5);   /*Primero px hacia la derecha y 2do hacia la abajo. 3er pixel es lo difumninado*/
+}
+
+/* Propiedades para links*/
+a {
+    color: hotpink;
+    background-color: #f00;
+    border: solid 1px #d00;
+    padding: 15px;
+    margin: 14px;
+    border-radius: 4px;
+}
+
+a:link { /*Cuando aun no esta visitado*/
+    color: pink;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:active { /*Cuando le damos click*/
+    color: black;
+}
+
+a:hover { /*Mouse por encima*/
+    color: white;
+    background-color: #f55;
+}
+
+
+/*Listas*/
+
+ul {
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+/*Elementos de lista*/
+li {
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+
+/*Tablas*/
+
+table {
+    width: 100%; /*Usar el ancho disponible de la ventana*/
+    background-color: white;
+    border-collapse: collapse; /*Le saca los bordes entre celdas*/
+}
+
+tr:nth-child(even){/*Para seleccionar un tipo de hijos (1 si y uno no)*/
+    background-color: #f2f2f2;
+} /*even par, odd impar*/
+
+td { /*Para todos los elementos*/
+    border: solid 1px #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/*Display block and display inline*/
+/*Los que son block se pueden hacer inline y viceversa*/
+#invisible {
+    display: none;
+}
+
+
+/*Ancho maximo. Limita el scroll. Con width es el ancho del contenido pero puedo scrollear*/
+p {
+    max-width: 350px; /*Para indicar que no use todo el ancho de la ventana*/
+    background-color: #f00;
+    margin: auto;
+   /* position: relative; trabaja en conjunto con left, right, top, bottom y se mueve relativamente desde ellas*/
+    position: fixed; /*para que el menu quede pegado arriba, fijo al scroll*/
+  
+}
+
+
+/*Contenido en espacios menores*/
+#over {
+    width: 100px;
+    height: 100px;
+    overflow: auto; /*Para manipular el contenido que queda fuera de lo que mido. Por ej todo lo que queda fuera del 100 x 100*/
+}
+
+/*Propiedad de float  y opacidad */
+
+img {
+    /*Quien tiene float hace que el resto se acomode a el*/
+    float: right;    
+}
+
+img:hover {
+    opacity: 0.9; /*0 trasparente, 1 totalmente el color*/ 
+}
+
+
+/*Combinaciones de selectores*/
+/*Por ejemplo quiero un p dentro de div y no el resto*/
+
+div p {
+    color: #f00;
+}

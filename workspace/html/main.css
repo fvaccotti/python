@@ -1,41 +1,22 @@
 body {
-    background-color: #eeeeeea8;
+    background-color: #eee;
 }
 
-.caja {
-    background-color: #ffffff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ccc;
-    border-radius: 2px;
-    border-top: solid 0px;
+/*Propiedad de float  y opacidad */
+
+img {
+    /*Quien tiene float hace que el resto se acomode a el*/
+    float: right;    
 }
 
-.contenido {
-    padding: 10px;
+img:hover {
+    opacity: 0.9; /*0 trasparente, 1 totalmente el color*/ 
 }
 
-.header {
-    padding: 10px;
-    border-bottom: solid 1px #eee; 
-}
 
-.footer {
-    padding: 10px;
-    border-top: solid 1px #eee;
+/*Combinaciones de selectores*/
+/*Por ejemplo quiero un p dentro de div y no el resto*/
 
-}
-
-.primario {
-    background-color: #0090ff;
-    border: 0px;
-    padding: 5px;
-    color: #ffffff
-}
-
-.secundario {
-    background-color: #aaa;
-    border: 0px;
-    padding: 5px;
-    color: #fff;
+div p {
+    color: #f00;
 }
