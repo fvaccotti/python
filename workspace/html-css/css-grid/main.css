@@ -1,0 +1,36 @@
+body {
+    background-color: #eee;
+}
+
+/*Disponible en CCS3*/
+
+.grid {
+    display: grid; /* inline-grid ocupa solo el ancho del mas ancho*/
+    grid-gap: 15px;
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]);
+    grid-template-columns: repeat(3, [col-inicio] 1fr [col-fin])
+    /* grid-template-rows: 50px 40px; /*cada valor es por fila empezando en la primera. los no indicados tendran valores auto*/
+   /* grid-template-columns: repeat(3, 1fr); /*se puede usar fracciones 1fr, 2rem, 20% 1fr */
+       /* grid-template-columns: [col-1-inicio] 1fr [col-2-start] 1fr [col-3-start] 1fr [col-4-end];
+   /*  grid-template-rows: minmax(100px, auto);*/
+/*  grid-template-rows: repeat(2, 50px); /*con repeat indicamos cuantas veces queremos que repita el comportamiento*/
+  /*  grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 30px [row-3-fin];
+  /* grid-row-gap: 20px;
+  grid-column-gap: 10px;*/ /*separaciones entre filas y columnas*/
+  
+}
+
+/*[col-2], [row-1] etc es para trabajar directamente con c/u*/
+
+.element {
+    background-color: red;
+}
+
+.header {
+   /* grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;*/
+    grid-column: col-inicio / col-fin 3;
+    grid-row: row-inicio / row-fin 3;
+}
