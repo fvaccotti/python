@@ -1,0 +1,41 @@
+
+.flex {
+    display: flex;
+    /*flex-wrap: wrap; /*envolver el contenido y hacerlo entrar*/
+    flex-flow: row wrap; /*flex direction + flex wrap*/
+    height: 200px;
+}
+
+.red{
+    background-color: red;
+}
+
+.primero {
+   /* order:1; /* default 0. El mas grande va al final*/
+  /* flex-grow: 1; /*lo que puede crecer cada elemento*/
+  /* flex-basis: 20px;*/
+  flex: 1 20px; /*flex grow + flex basis*/
+}
+
+.segundo {
+    flex-grow: 1; 
+}
+
+.tercero {
+    flex-grow: 2;
+    align-self: baseline;
+}
+
+.cuarto {
+    flex-grow: 3; 
+    align-self: center;
+}
+
+.quinto {
+    flex-grow: 1; 
+    align-self: stretch;
+}
+
+.sexto {
+    flex-grow: 2; 
+}

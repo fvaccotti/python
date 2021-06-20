@@ -1,0 +1,9 @@
+Flexbox a diferencia de grid
+considera el contenido esta en una unica fila o en una unica columna.
+
+Distribuir el contenido en una sola dimension.
+
+Esto hace que al continuar el contenido en fila, cuando
+salte a la linea de abajo, no necesariamente las columnas 
+van a encajar directamente. 
+
