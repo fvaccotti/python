@@ -1,0 +1,12 @@
+Para setear el ambiente de desarrollo y que tenga hot deploy
+export FLASK_ENV=development
+(venv) minifaby@minifaby-NUC8i5BEHS:~/Documentos/curso-python/python/workspace/intro-flask$ flask run
+ * Serving Flask app 'holamundo.py' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 263-528-228
+
+ Venv es un ambiente virtual que te permite configurar distintos entornos / versiones.
